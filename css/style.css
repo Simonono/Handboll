@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+/* index.html: */
+
+#index_body {
+    background-image: url("../img/handballarena.webp");
+}
+
+#logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+#hem {
+    margin-left: 20px;
+}
+
+nav {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #38618b;
+    background-color: white;
+}
+
+a:hover {
+    color: #EA484F;
+}
+
+/* index.html end */

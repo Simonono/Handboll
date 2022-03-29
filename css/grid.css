@@ -1,0 +1,46 @@
+/* Navbar start: */
+
+nav {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    grid-template-columns: 9% 1fr 1fr 1fr; /* Navbar med Grid med 4 kolumner som för varje item */
+    align-items: center;
+}
+
+#logo {
+    grid-column: 1;
+}
+
+#hem {
+    grid-column: 2;
+}
+
+#vad_handboll {
+    grid-column: 3;
+}
+
+#spela_handboll {
+    grid-column: 4;
+}
+
+/* Navbar end */
+
+/* Grid properties start: */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);  /* Skapar en grid med 12 kolumner och rader som är minst 40 px. */
+    grid-auto-rows: minmax(40px, auto);
+}
+
+/* Grid properties end */
+
+/* index grid placement start: */
+
+
+
+/*index grid placement end */
