@@ -1,21 +1,38 @@
+
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-/* index.html: */
+
+.img_frame {                /*Ram flör bilder */
+    border: solid rgba(255, 255, 255, 0.53) 4px;
+    border-radius: 10px;
+}
+
+.img_shadow {            /*Skapar en skugga för bilder */
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.27), -3px -3px 25px rgba(0, 0, 0, 0.27);
+}
+
+/*navbar start */
 
 #index_body {
     background-image: url("../img/handballarena.webp");
 }
 
 #logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
     width: 60%;
+    margin-left: 7px;
 }
 
 #hem {
     margin-left: 20px;
+}
+
+#h1_besta {
+    font-family: Helvetica, sans-serif;
 }
 
 nav {
@@ -23,10 +40,21 @@ nav {
     font-size: 1.5vw;
     color: #38618b;
     background-color: white;
+    box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.5);
 }
 
 a:hover {
     color: #EA484F;
 }
+
+/* navbar end*/
+
+/* index.html: */
+
+#hembild {
+    width: 90%;
+    margin: auto;
+}
+
 
 /* index.html end */
