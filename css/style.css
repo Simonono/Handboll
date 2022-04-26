@@ -1,4 +1,4 @@
-
+/* Allmänt start */
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,12 @@
     padding: 0;
 }
 
-.img_frame {                /*Ram flör bilder */
+@font-face { /* Lägger till nedladdad font */
+    font-family: Raleway-regular;
+    src: url("../resources/raleway/static/raleway-regular.ttf");
+}
+
+.img_frame {                /*Ram för bilder */
     border: solid rgba(255, 255, 255, 0.53) 4px;
     border-radius: 10px;
 }
@@ -15,11 +20,50 @@
     box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.27), -3px -3px 25px rgba(0, 0, 0, 0.27);
 }
 
-/*navbar start */
+/* Allmänt end */
+
+/*Animationer start */
+
+/* Frys body för att vänta in animationer */
+@keyframes freezebody {
+    0% {
+        position: fixed;
+    }
+
+    99% {
+        position: fixed;
+    }
+
+    100% {
+        position: static;
+    }
+}
 
 #index_body {
-    background-image: url("../img/handballarena.webp");
+    animation: freezebody 1.5s;
 }
+/* Frys body för att vänta in animationer */
+
+@keyframes animationStart { /*Animationer för titlen och bilder (intoning)*/
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {  /* Animation rörelse */
+    0%   {top: -120px; }
+    100% {top: 0px;}
+}
+
+/* Animationer end */
+
+/*navbar start */
 
 #logo {
     margin-right: 20px;
@@ -31,16 +75,12 @@
     margin-left: 20px;
 }
 
-#h1_besta {
-    font-family: Helvetica, sans-serif;
-}
-
 nav {
     font-family: Helvetica, sans-serif;
     font-size: 1.5vw;
     color: #38618b;
-    background-color: white;
-    box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.5);
+    animation: move 1s;
+    background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
 }
 
 a:hover {
@@ -49,12 +89,53 @@ a:hover {
 
 /* navbar end*/
 
-/* index.html: */
+/* footer start */
+
+footer {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.29), rgb(255, 255, 255));
+}
+
+.back-top {
+    font-size: 300%;
+    font-family: "Monaco", "Lucida Console", monospace;
+    color: black;
+    text-decoration: none;
+}
+
+.credits {
+
+}
+
+/* footer end */
+
+/* index start */
+#index_body {    /*bakgrundsbild för hela sidan */
+    background-image: url("../resources/handballarena.webp");
+}
 
 #hembild {
     width: 90%;
     margin: auto;
+    animation: animationStart 1.5s linear 1;
+}
+
+#intro_text {
+    font-family: Raleway-regular;
+    font-size: 1.4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    animation: animationStart 1.5s linear 1;
+}
+
+#video {
+    animation: animationStart 1.5s linear 1;
+}
+
+#h1_besta {
+    font-family: Helvetica, sans-serif;
+    animation: animationStart 1.5s linear 1;
 }
 
 
-/* index.html end */
+
+/* index end */

@@ -40,7 +40,31 @@ nav {
 
 /* Grid properties end */
 
-/* index grid placement start: */
+/* Footer start */
+
+footer {
+    grid-column: 1/-1;
+    grid-row: 6;
+    margin-top: 60px;
+}
+
+.credits {
+    grid-column: 12;
+    grid-row: 8;
+    align-self: center;
+    justify-self: center;
+}
+
+.back-top {
+    grid-column: 1;
+    grid-row: 8;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Footer end */
+
+/* index grid start: */
 
 #h1_besta {
     grid-column: 2/4;
@@ -52,5 +76,17 @@ nav {
     grid-row: 4;
 }
 
+#intro_text {
+    grid-column: 7/-1;
+    grid-row: 4;
+    align-self: center;
+}
 
-/*index grid placement end */
+#video {
+    grid-column: 1/-1;
+    grid-row: 7;
+    justify-self: center;
+}
+
+
+/*index grid end */
