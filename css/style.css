@@ -7,7 +7,7 @@
 }
 
 @font-face { /* Lägger till nedladdad font */
-    font-family: Raleway-regular;
+    font-family: raleway-regular;
     src: url("../resources/raleway/static/raleway-regular.ttf");
 }
 
@@ -39,10 +39,10 @@
     }
 }
 
-#index_body {
+.index_body {
     animation: freezebody 1.5s;
 }
-/* Frys body för att vänta in animationer */
+/* Frys index.body för att vänta in animationer */
 
 @keyframes animationStart { /*Animationer för titlen och bilder (intoning)*/
     0% {
@@ -65,10 +65,10 @@
 
 /*navbar start */
 
-#logo {
+a #logo {
     margin-right: 20px;
     width: 60%;
-    margin-left: 7px;
+    margin-left: 10px;
 }
 
 #hem {
@@ -83,8 +83,19 @@ nav {
     background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
 }
 
+nav a {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: #38618b;
+    text-decoration: none;
+}
+
 a:hover {
     color: #EA484F;
+}
+
+#no_animate {       /* För att förhindra animation på de andra sidorna */
+   animation: none;
 }
 
 /* navbar end*/
@@ -103,35 +114,36 @@ footer {
 }
 
 .credits {
-
+    font-family: raleway-regular;
+    text-decoration: none;
 }
 
 /* footer end */
 
 /* index start */
-#index_body {    /*bakgrundsbild för hela sidan */
+.index_body {    /*bakgrundsbild för hela sidan */
     background-image: url("../resources/handballarena.webp");
 }
 
-#hembild {
+.hembild {
     width: 90%;
     margin: auto;
     animation: animationStart 1.5s linear 1;
 }
 
-#intro_text {
-    font-family: Raleway-regular;
+.intro_text {
+    font-family: raleway-regular;
     font-size: 1.4vw;
     margin-left: 1vw;
     margin-right: 1vw;
     animation: animationStart 1.5s linear 1;
 }
 
-#video {
+.video {
     animation: animationStart 1.5s linear 1;
 }
 
-#h1_besta {
+.h1_besta {
     font-family: Helvetica, sans-serif;
     animation: animationStart 1.5s linear 1;
 }
