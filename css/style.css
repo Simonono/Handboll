@@ -20,11 +20,36 @@
     box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.27), -3px -3px 25px rgba(0, 0, 0, 0.27);
 }
 
+.text_shadow {    /* Skugga för text */
+    text-shadow: 2px 2px 5px rgba(9, 8, 8, 0.39);
+}
+
+.h1 {
+    font-family: Helvetica, sans-serif;
+    animation: animationStart 1.5s linear 1;
+}
+
+.section_text {
+    font-family: raleway-regular;
+    font-size: 1em;
+}
+
+.section_link {
+    font-family: raleway-regular;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
+
+.container {    /*bakgrundsbild för hela sidan */
+    background-image: url("../resources/handballarena.webp");
+}
+
 /* Allmänt end */
 
 /*Animationer start */
 
-/* Frys body för att vänta in animationer */
+/* Start: Frys body för att vänta in animationer */
 @keyframes freezebody {
     0% {
         position: fixed;
@@ -42,7 +67,7 @@
 .index_body {
     animation: freezebody 1.5s;
 }
-/* Frys index.body för att vänta in animationer */
+/* End: Frys index.body för att vänta in animationer */
 
 @keyframes animationStart { /*Animationer för titlen och bilder (intoning)*/
     0% {
@@ -65,13 +90,13 @@
 
 /*navbar start */
 
-a #logo {
+a .logo {
     margin-right: 20px;
     width: 60%;
     margin-left: 10px;
 }
 
-#hem {
+.hem {
     margin-left: 20px;
 }
 
@@ -94,7 +119,7 @@ a:hover {
     color: #EA484F;
 }
 
-#no_animate {       /* För att förhindra animation på de andra sidorna */
+.no_animate {       /* För att förhindra animation på de andra sidorna */
    animation: none;
 }
 
@@ -104,6 +129,7 @@ a:hover {
 
 footer {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.29), rgb(255, 255, 255));
+    margin-top: 10px;
 }
 
 .back-top {
@@ -121,13 +147,10 @@ footer {
 /* footer end */
 
 /* index start */
-.index_body {    /*bakgrundsbild för hela sidan */
-    background-image: url("../resources/handballarena.webp");
-}
-
 .hembild {
     width: 90%;
-    margin: auto;
+    align-self: center;
+    justify-self: center;
     animation: animationStart 1.5s linear 1;
 }
 
@@ -143,11 +166,31 @@ footer {
     animation: animationStart 1.5s linear 1;
 }
 
-.h1_besta {
-    font-family: Helvetica, sans-serif;
-    animation: animationStart 1.5s linear 1;
+/* index end */
+
+/* vad är handboll start */
+
+.oldhandball {
+    width: 75%;
+    align-self: center;
+    justify-self: center;
 }
 
 
+/* vad är handboll end */
 
-/* index end */
+h2 {
+    font-family: Helvetica, sans-serif;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Spela handboll start: */
+
+.forbund {
+    font-family: Arial;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+/* Spela handboll end */
