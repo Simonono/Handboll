@@ -8,7 +8,7 @@
 
 @font-face { /* Lägger till nedladdad font */
     font-family: raleway-regular;
-    src: url("../resources/raleway/static/raleway-regular.ttf");
+    src: url("../resourcez/raleway/static/raleway-regular.ttf");
 }
 
 .img_frame {                /*Ram för bilder */
@@ -42,7 +42,7 @@
 }
 
 .container {    /*bakgrundsbild för hela sidan */
-    background-image: url("../resources/handballarena.webp");
+    background-image: url("../resourcez/handballarena.webp");
 }
 
 /* Allmänt end */
