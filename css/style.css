@@ -8,7 +8,7 @@
 
 @font-face { /* Lägger till nedladdad font */
     font-family: raleway-regular;
-    src: url("../resources/raleway/static/raleway-regular.ttf");
+    src: url("../resources/raleway/static/Raleway-Regular.ttf");
 }
 
 .img_frame {                /*Ram för bilder */
