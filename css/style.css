@@ -6,11 +6,6 @@
     padding: 0;
 }
 
-@font-face { /* Lägger till nedladdad font */
-    font-family: raleway-regular;
-    src: url("../resources/raleway/static/Raleway-Regular.ttf");
-}
-
 .img_frame {                /*Ram för bilder */
     border: solid rgba(255, 255, 255, 0.53) 4px;
     border-radius: 10px;
@@ -30,12 +25,12 @@
 }
 
 .section_text {
-    font-family: raleway-regular;
+    font-family:'Raleway', sans-serif;
     font-size: 1em;
 }
 
 .section_link {
-    font-family: raleway-regular;
+    font-family:'Raleway', sans-serif;
     text-decoration: none;
     align-self: center;
     justify-self: center;
@@ -140,7 +135,7 @@ footer {
 }
 
 .credits {
-    font-family: raleway-regular;
+    font-family:'Raleway', sans-serif;
     text-decoration: none;
 }
 
@@ -155,7 +150,7 @@ footer {
 }
 
 .intro_text {
-    font-family: raleway-regular;
+    font-family:'Raleway', sans-serif;
     font-size: 1.4vw;
     margin-left: 1vw;
     margin-right: 1vw;
