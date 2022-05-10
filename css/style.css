@@ -139,6 +139,10 @@
 
 /*navbar start */
 
+.navbarmobile {
+    display: none;
+}
+
 a .logo {
     margin-right: 20px;
     width: 60%;
@@ -149,16 +153,15 @@ a .logo {
     margin-left: 20px;
 }
 
-nav {
+.navbar {
     font-family: Helvetica, sans-serif;
     font-size: 1.5vw;
-    color: #38618b;
     animation: move 1s;
     background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
     z-index: 5;
 }
 
-nav a {
+.navbar a {
     font-family: Helvetica, sans-serif;
     font-size: 1.5vw;
     color: #38618b;
@@ -197,6 +200,11 @@ footer {
 /* footer end */
 
 /* index start */
+
+#ball {
+    position: absolute;
+}
+
 .hembild {
     width: 90%;
     align-self: center;
@@ -244,3 +252,107 @@ h2 {
 }
 
 /* Spela handboll end */
+
+
+
+@media only screen and (max-width: 650px) {
+
+    /* Mobil anpassad navbar start */
+    .navbar {
+        display: none;
+    }
+
+    .navbarmobile {
+        display: block;
+    }
+
+    a .logo {
+        width: 5%;
+        height: 5%;
+    }
+
+    /* Style the navigation menu */
+
+    .topnav {
+        overflow: hidden;
+        background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: black;
+        padding: 7px 8px;
+        text-decoration: none ;
+        font-size: 17px;
+        font-family: Raleway, sans-serif;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: #38618b;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 5vw;
+        align-self: center;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        color: #EA484F;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
+        color: white;
+    }
+
+
+/*Mobilanpassad navbar end */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

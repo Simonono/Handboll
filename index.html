@@ -10,22 +10,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="index_body">
-<nav>
-    <a href="index.html"><img src="resources/logo.png" alt="Logga med en handboll" class="logo" ></a>
+<nav class="navbar">
+    <a href="index.html"><img src="resources/logo2.webp" alt="Logga med en handboll" class="logo" ></a>
     <a class="text_shadow hem">Hem</a>
     <a class="vad_handboll" href="vadarhandboll.html">Vad är handboll?</a>
     <a class="spela_handboll" href="spelahandboll.html">Jag vill spela handboll!</a>
+</nav>
+<nav class="navbarmobile topnav"> <!-- En till navbar för mobila enheter -->
+    <a href="index.html" class="active"><img src="resources/logo2.webp" alt="Logga med en handboll" class="logo"></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a class="text_shadow">Hem</a>
+        <a href="vadarhandboll.html">Vad är handboll?</a>
+        <a href="spelahandboll.html">Jag vill spela handboll!</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </nav>
 <div class="container">
     <h1 class="h1">Bästa sporten!</h1>
     <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo et massa sit amet lacinia. Aliquam erat volutpat. Sed suscipit magna id mi maximus, a posuere metus dictum. Nunc auctor in tortor ac dapibus. Cras vel mauris at turpis bibendum commodo. Vivamus venenatis molestie enim ac placerat.<br><br> Curabitur libero ligula, gravida at gravida at, placerat id urna. Maecenas massa lectus, blandit sed magna eu, aliquet commodo sapien. Vestibulum nunc sem, vehicula at blandit eget, commodo non orci. Maecenas vestibulum odio nec tortor tempus, quis finibus velit sodales. Praesent vel auctor est, sit amet ultricies tellus. Donec quis scelerisque urna, id.</p>
     <img src="resources/huvudbild.webp" alt="Bild på personer som spelar handboll" class="img_frame img_shadow hembild">
-    <iframe class="img_frame img_shadow video" width="560" height="315" src="https://www.youtube.com/embed/OOEHMmbtqxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="img_frame img_shadow video" width="45%" height="340" src="https://www.youtube.com/embed/OOEHMmbtqxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <footer></footer>
     <a href="#top" class="back-top">&#8593;</a> <!-- En uppåt pil -->
     <a class="credits" href="https://docs.google.com/document/d/1f0Slou5ZL-34YI3MpOB2nC_bsdC82nBg59LDHtXU8qc/edit?usp=sharing" target="_blank">Credits</a>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

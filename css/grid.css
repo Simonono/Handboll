@@ -1,6 +1,6 @@
 /* Navbar start: */
 
-nav {
+.navbar {
     display: grid;
     position: fixed;
     width: 100%;
@@ -136,6 +136,7 @@ h2 {
     grid-column: 8/-1;
     grid-row: 4;
     justify-self: center;
+    align-self: center;
 }
 
 #js_map {
@@ -145,15 +146,17 @@ h2 {
     align-self: center;
 }
 
-.forbund {
+.dropdown {
     grid-column: 8/-1;
     grid-row: 5;
 }
 
-.dropdown {
-    grid-column: 8/-1;
-    grid-row: 6;
-}
-
 
 /* spela handboll end */
+
+
+@media only screen and (max-width: 650px) {
+
+
+
+}
