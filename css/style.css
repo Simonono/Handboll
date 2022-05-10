@@ -267,19 +267,18 @@ h2 {
     }
 
     a .logo {
-        width: 5%;
-        height: 5%;
-    }
+       height: 10%;
+       width: 10%;
+   }
 
     /* Style the navigation menu */
-
     .topnav {
         overflow: hidden;
         background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
         position: relative;
     }
 
-    /* Hide the links inside the navigation menu (except for logo/home) */
+    /* Hide the links inside the navigation menu (except for logo) */
     .topnav #myLinks {
         display: none;
     }
@@ -294,26 +293,23 @@ h2 {
         display: block;
     }
 
-    /* Style the hamburger menu */
+    /* Style the hamburger  */
     .topnav a.icon {
         background: #38618b;
         display: block;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 2vw;
+        padding-top: ;
         font-size: 5vw;
         align-self: center;
-    }
-
-    /* Add a grey background color on mouse-over */
-    .topnav a:hover {
-        color: #EA484F;
     }
 
     /* Style the active link (or home/logo) */
     .active {
         background-image: linear-gradient(to top, rgba(239, 239, 239, 0.95), rgb(255, 255, 255));
         color: white;
+        margin: 0;
     }
 
 

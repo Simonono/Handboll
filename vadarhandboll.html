@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <nav class="navbar no_animate">
@@ -17,6 +18,18 @@
     <a class="hem" href="index.html">Hem</a>
     <a class="text_shadow vad_handboll">Vad är handboll?</a>
     <a class="spela_handboll" href="spelahandboll.html">Jag vill spela handboll!</a>
+</nav>
+<nav class="navbarmobile topnav"> <!-- En till navbar för mobila enheter -->
+    <a href="index.html" class="active"><img src="resources/logo2.webp" alt="Logga med en handboll" class="logo"></a>
+    <div id="myLinks">
+        <a href="index.html">Hem</a>
+        <a class="text_shadow">Vad är handboll?</a>
+        <a href="spelahandboll.html">Jag vill spela handboll!</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </nav>
 <div class="container">
     <h1 class="h1 no_animate">Historia</h1>
@@ -27,5 +40,6 @@
     <a href="#top" class="back-top">&#8593;</a> <!-- En uppåt pil -->
     <a class="credits" href="https://docs.google.com/document/d/1f0Slou5ZL-34YI3MpOB2nC_bsdC82nBg59LDHtXU8qc/edit?usp=sharing" target="_blank">Credits</a>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
