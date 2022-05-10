@@ -24,7 +24,7 @@ window.onclick = function(event) {
 
 //Mobile dropdown start
 
-function myFunction() {
+function meFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
