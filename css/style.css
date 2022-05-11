@@ -19,6 +19,12 @@
     text-shadow: 2px 2px 5px rgba(9, 8, 8, 0.39);
 }
 
+.text_background {
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
 .h1 {
     font-family: Helvetica, sans-serif;
     animation: animationStart 1.5s linear 1;
@@ -43,57 +49,7 @@
 /* Allmänt end */
 
 
-/* Dropdown start */
 
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #38618b;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    height: 8vh;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    display: flex;      /*flexbox för att kunna placera dropdown content åt sidan */
-    flex-direction: row;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    background-color: rgba(255, 255, 255, 0.73);
-    font-family:'Raleway', sans-serif;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-/* Dropdown end */
 
 
 /*Animationer start */
@@ -182,7 +138,6 @@ a:hover {
 
 footer {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.29), rgb(255, 255, 255));
-    margin-top: 10px;
 }
 
 .back-top {
@@ -190,11 +145,15 @@ footer {
     font-family: "Monaco", "Lucida Console", monospace;
     color: black;
     text-decoration: none;
+    justify-self: center;
+    align-self: center;
 }
 
 .credits {
     font-family:'Raleway', sans-serif;
     text-decoration: none;
+    justify-self: center;
+    align-self: center;
 }
 
 /* footer end */
@@ -251,6 +210,58 @@ h2 {
     margin-right: 10px;
 }
 
+/* Dropdown start */
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #38618b;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 8vh;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: flex;      /*flexbox för att kunna placera dropdown content åt sidan */
+    flex-direction: row;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.73);
+    font-family:'Raleway', sans-serif;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* Dropdown end */
+
 /* Spela handboll end */
 
 
@@ -258,6 +269,7 @@ h2 {
 @media only screen and (max-width: 650px) {
 
     /* Mobil anpassad navbar start */
+
     .navbar {
         display: none;
     }
@@ -314,6 +326,77 @@ h2 {
 
 
 /*Mobilanpassad navbar end */
+
+    .back-top {
+        font-size: 250%;
+    }
+
+    .credits {
+        font-family:'Raleway', sans-serif;
+        text-decoration: none;
+        justify-self: center;
+        align-self: center;
+        font-size: 1em;
+    }
+
+
+    .h1 {
+        font-size: 5vw;
+        margin-bottom: 5px;
+    }
+
+    .intro_text {
+        font-size: 2.5vw;
+        margin-bottom: 15px;
+        justify-self: center;
+    }
+
+    .video {
+        width: 50%;
+        height: auto;
+
+    }
+
+    .hembild {
+        width: 50%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .section_text {
+        font-size: 3.8vw;
+    }
+
+    .oldhandball {
+        width: 90%;
+        heigt: auto;
+        margin-bottom: 15px;
+    }
+
+    #map {
+        margin-top: 15px;
+        height: 110%;
+        width: auto;
+    }
+
+    #merregler {
+        font-size: 3vw;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        font-size: 3vw;
+        margin-top: 15px;
+    }
+
+    .dropbtn {
+        padding: 10px;
+        font-size: 3vw;
+        height: 5vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 
 
 }
