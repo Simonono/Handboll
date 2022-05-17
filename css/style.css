@@ -312,7 +312,6 @@ h2 {
         position: absolute;
         right: 0;
         top: 2vw;
-        padding-top: ;
         font-size: 5vw;
         align-self: center;
     }
@@ -369,7 +368,6 @@ h2 {
 
     .oldhandball {
         width: 90%;
-        heigt: auto;
         margin-bottom: 15px;
     }
 
